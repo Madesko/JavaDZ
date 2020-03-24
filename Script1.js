@@ -1,42 +1,42 @@
 let sale = "999";
 
 if (sale < "1000") {
-    console.log("Скидка не предусмотрена");
+    console.log("No discount");
 } else if (sale >= "1000" && sale < "2000") {
     sale = sale * 0.95;
-    console.log(sale, "Скидка 5%");
+    console.log(sale, "Discount 5%");
 } else if (sale >= "2000" && sale < "3000") {
     sale = sale * 0.9;
-    console.log(sale, "Скидка 10%");
+    console.log(sale, "Discount 10%");
 } else if (sale >= "3000") {
     sale = sale * 0.9;
-    console.log(sale, "Скидка 10% + Подарок");
+    console.log(sale, "Discount 10% + present");
 }
 
-let month = 'Май';
+let month = 'May';
 switch (month) {
-    case 'Декабрь':
-    case 'Январь':
-    case 'Февраль':
-        console.log("Зима");
+    case 'December':
+    case 'January':
+    case 'February':
+        console.log("Winter");
         break; 
-    case 'Март':
-    case 'Апрель':
-    case 'Май':
-        console.log("Весна");
+    case 'March':
+    case 'April':
+    case 'May':
+        console.log("Spring");
         break;
-    case 'Июнь':
-    case 'Июль':
-    case 'Август':
-        console.log("Лето");
+    case 'June':
+    case 'July':
+    case 'August':
+        console.log("Summer");
         break;
-    case 'Сентябрь':
-    case 'Октябрь':
-    case 'Ноябрь':
-        console.log("Осень");
+    case 'September':
+    case 'October':
+    case 'November':
+        console.log("Autumn");
         break;
     default: 
-        console.log("Пиши нормально, 13 месяца пока еще никто не придумал");
+        console.log("Wrong Month");
 }
 
 let min = 1;
@@ -44,13 +44,23 @@ let max = 7;
 let random = Math.random() * (+max - +min) + +min;
 let num = 1;
 if (num === random && num != 0) {
-    console.log("Вы угадали");
+    console.log("Correct!");
 } else if (num > random && num != 0) {
-    console.log("Число меньше");
+    console.log("Number is less");
 } else if (num < random && num != 0) {
-    console.log("Число больше");
+    console.log("Number is bigger");
 } else if (num === 0) {
-    console.log("Выход");
+    console.log("Exit");
 }
 
 let numbs = [1, 2, 3, 4, 5, 6, 7];
+let sum = "";
+for (let i = 0; i < numbs.length; i++);
+{
+    for (let j = 0; j < numbs.length; j++) {
+        do {
+            (numbs[i] + numbs[j]);
+        } while (numbs[i] !== numbs[j]);
+        console.log()
+    }
+} 
